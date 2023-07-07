@@ -6,13 +6,106 @@
   <title>Test</title>
 </head>
 <body>
-  <div class="title">Test Github Page</div>
+<div class="popup-License">
+  <p class="center-title">使用者條款</p>
+  <div class=scroll-container></div>
+  <div class="checkboxItem-1">
+    <input type="checkbox" class="box" name="check1" id="check1">
+    <div class="accept_text">
+      <label for="accept">我已閱讀並同意使用者條款</label>
+    </div>
+  </div>
+
+  <div class="btnBlock">
+    <button class="active_btn">取消</button>
+    <button class="disable_btn">確定</button>
+  </div>
+</div>
 </body>
 </html>
 
 
 <style>
-  .title {
-    font-size: 50px;
+  .popup-License {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    width: calc(100% - 34.4086021505px);
+    height: calc(100% - 34.4086021505px);
+    margin: 17.2043010753px;
+  }
+  .center-title {
+    text-align: center;
+    font-size: 13.7634408602px;
+    margin-top: 8.0286738351px;
+    margin-bottom: 14.9103942652px;
+    font-weight: 700;
+    line-height: 22.9390681004px;
+    color: #2e343a;
+  }
+  .scroll-container {
+    display: block;
+    width: calc(100% - 34.4086021505px);
+    flex-grow: 1;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    font-size: 13px;
+    padding: 16.6308243728px;
+    text-align: left;
+    color: #2e343a;
+  }
+  .checkboxItem-1 {
+    border-style: solid;
+    border-image: linear-gradient(to right,rgba(86,101,117,0) 0%,#566575 50%,rgba(86,101,117,0) 100%) 1;
+    box-sizing: border-box;
+    border-width: 1.146953405px 0 0;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding: 16.0573476703px 16.6308243728px 4.5878136201px;
+  }
+  .box {
+    margin-right: 8.0286738351px;
+    width: 17.2043010753px;
+    height: 17.2043010753px;
+  }
+  .accept_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .btnBlock {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 11.4695340502px 0 17.2043010753px;
+  }
+  .active_btn {
+    padding: 0;
+    height: 35.5555555556px;
+    color: #fff;
+    border: 1.146953405px solid;
+    border-image: linear-gradient(to right,#2b5cd7,#15fbff);
+    border-image-slice: 1;
+    background-color: #2e506b;
+    margin: 17.2043010753px;
+    width: 100px;
+  }
+  .disable_btn {
+    padding: 0;
+    height: 35.5555555556px;
+    background-color: rgba(0,0,0,.5);
+    border: 1.146953405px solid;
+    border-image: linear-gradient(to right,#2b5cd7,#15fbff);
+    border-image-slice: 1;
+    margin: 17.2043010753px;
+    width: 100px;
+    opacity: .2;
+    color: #fff;
+    pointer-events: none;
   }
 </style>
