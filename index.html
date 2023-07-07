@@ -11,10 +11,9 @@
       <div class="tariff">
         <div class="scroll-container">
           <p class="restrictions-price">
-            <span>最低支付費用-</span>
+            <span>最低支付費用+-</span>
             <span>$80</span>
           </p>
-
           <div class="charging-rate">
             <caption class="table-title">充電費率</caption>
             <table>
@@ -272,8 +271,7 @@
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  /* max-height: calc(800px - 45.8781362007px - 143.3691756272px); */
-  height: 600px;
+  max-height: calc(800px - 45.8781362007px - 143.3691756272px);
   overflow-y: auto;
   scroll-behavior: smooth;
   margin-top: 45.8781362007px;
@@ -287,6 +285,7 @@
 }
 .charging-rate {
   width: 100%;
+  height: 800px;  /* Tony++ */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -295,6 +294,7 @@
 }
 .parking-rate {
   width: 100%;
+  height: 800px;  /* Tony++ */
   display: flex;
   flex-direction: column;
   align-items: center;
