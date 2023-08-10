@@ -7,7 +7,7 @@
 </head>
 <body>
   <div class="container">
-    <button onclick="click_function()">click me</button>
+    <button onclick="click_function()">click me-2</button>
   </div>
 </body>
 </html>
@@ -16,7 +16,17 @@
 <script>
   const click_function = () => {
     console.log("Hi")
-    window.location.href = 'https://msievlife.page.link/download'
+    if (navigator.userAgent.match(/(Android)/i)) {
+      console.log("Android")
+      window.location.href = 'https://msievlife.page.link/download'
+    }
+    else if ( navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad)/i) ) {
+      console.log("IOS")
+      window.location.href = 'https://msievlife.page.link/download'
+    }
+    else {
+      console.log("Others")
+    }
   }
 </script>
 
