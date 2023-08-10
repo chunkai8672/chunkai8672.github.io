@@ -7,7 +7,9 @@
 </head>
 <body>
   <div class="container">
-    <button onclick="click_function()">click me-3</button>
+    <button onclick="click_function()">click me-4</button>
+
+    <p id="note" style="margin-top: 20px;"></p>
   </div>
 </body>
 </html>
@@ -27,8 +29,12 @@
     // else {
     //   console.log("Others")
     // }
-    window.location.href = 'https://msievlife.page.link/download'
+    // console.log(navigator.userAgent)
+    // window.location.href = 'https://msievlife.page.link/download'
   }
+
+  let el = document.getElementById("note")
+  el.innerHTML = navigator.userAgent
 </script>
 
 <style>
@@ -40,6 +46,7 @@
 .container {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
